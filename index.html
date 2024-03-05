@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">User Registration</h1>
+            <p id="description" class="description text-center">Create your account</p>
+        </header>
+        <form id="registration-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="age-label" for="age">Age</label>
+                <input type="number" name="age" id="age" class="form-control" placeholder="Enter your age" min="18" required>
+            </div>
+            <div class="form-group">
+                <label id="password-label" for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label id="confirm-password-label" for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" class="form-control" placeholder="Confirm your password" required>
+            </div>
+            <div class="form-group">
+                <label id="comment-label" for="comment">Comments</label>
+                <textarea name="comment" id="comment" class="form-control" placeholder="Enter your comments"></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="submit" class="submit-button">Register</button>
+                <button type="button" id="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
